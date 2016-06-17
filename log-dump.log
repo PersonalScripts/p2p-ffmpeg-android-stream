@@ -1,0 +1,105 @@
+E:\ide\jdk1.8\bin\java -Didea.launcher.port=7532 "-Didea.launcher.bin.path=E:\ide\IntelliJ IDEA 15.0.4\bin" -Dfile.encoding=UTF-8 -classpath "E:\ide\jdk1.8\jre\lib\charsets.jar;E:\ide\jdk1.8\jre\lib\deploy.jar;E:\ide\jdk1.8\jre\lib\ext\access-bridge-64.jar;E:\ide\jdk1.8\jre\lib\ext\cldrdata.jar;E:\ide\jdk1.8\jre\lib\ext\dnsns.jar;E:\ide\jdk1.8\jre\lib\ext\jaccess.jar;E:\ide\jdk1.8\jre\lib\ext\jfxrt.jar;E:\ide\jdk1.8\jre\lib\ext\localedata.jar;E:\ide\jdk1.8\jre\lib\ext\nashorn.jar;E:\ide\jdk1.8\jre\lib\ext\sunec.jar;E:\ide\jdk1.8\jre\lib\ext\sunjce_provider.jar;E:\ide\jdk1.8\jre\lib\ext\sunmscapi.jar;E:\ide\jdk1.8\jre\lib\ext\sunpkcs11.jar;E:\ide\jdk1.8\jre\lib\ext\zipfs.jar;E:\ide\jdk1.8\jre\lib\javaws.jar;E:\ide\jdk1.8\jre\lib\jce.jar;E:\ide\jdk1.8\jre\lib\jfr.jar;E:\ide\jdk1.8\jre\lib\jfxswt.jar;E:\ide\jdk1.8\jre\lib\jsse.jar;E:\ide\jdk1.8\jre\lib\management-agent.jar;E:\ide\jdk1.8\jre\lib\plugin.jar;E:\ide\jdk1.8\jre\lib\resources.jar;E:\ide\jdk1.8\jre\lib\rt.jar;E:\workspace\UDPHolePunchingServer\out\production\UDPHolePunchingServer;E:\ide\IntelliJ IDEA 15.0.4\lib\idea_rt.jar" com.intellij.rt.execution.application.AppMain com.company.ClientSide
+IP: /109.55.132.187 PORT: 52547
+Here is the standard output of the command:
+ffmpeg version N-79630-g9ac154d Copyright (c) 2000-2016 the FFmpeg developers
+  built with gcc 5.3.0 (GCC)
+  configuration: --enable-gpl --enable-version3 --disable-w32threads --enable-avisynth --enable-bzlib --enable-fontconfig --enable-frei0r --enable-gnutls --enable-iconv --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libfreetype --enable-libgme --enable-libgsm --enable-libilbc --enable-libmodplug --enable-libmfx --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libopus --enable-librtmp --enable-libschroedinger --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs --enable-libxvid --enable-libzimg --enable-lzma --enable-decklink --enable-zlib
+  libavutil      55. 22.101 / 55. 22.101
+  libavcodec     57. 38.100 / 57. 38.100
+  libavformat    57. 34.103 / 57. 34.103
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 44.100 /  6. 44.100
+  libswscale      4.  1.100 /  4.  1.100
+  libswresample   2.  0.101 /  2.  0.101
+  libpostproc    54.  0.100 / 54.  0.100
+Guessed Channel Layout for  Input Stream #0.1 : stereo
+Input #0, dshow, from 'video=Integrated Camera:audio=Microphone (5- Logitech USB Headset H340)':
+  Duration: N/A, start: 1452836.126000, bitrate: N/A
+    Stream #0:0: Video: rawvideo, bgr24, 640x360, 30 fps, 32 tbr, 10000k tbn
+    Stream #0:1: Audio: pcm_s16le, 44100 Hz, 2 channels, s16, 1411 kb/s
+[libx264 @ 000000000267dd00] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+[libx264 @ 000000000267dd00] profile Constrained Baseline, level 3.0
+[mpegts @ 0000000008b2c940] Using AVStream.codec to pass codec parameters to muxers is deprecated, use AVStream.codecpar instead.
+    Last message repeated 1 times
+Output #0, mpegts, to 'udp://109.55.132.187:52547?localport=56190':
+  Metadata:
+    encoder         : Lavf57.34.103
+    Stream #0:0: Video: h264, yuv420p, 640x360, q=2-31, 30 fps, 90k tbn
+    Metadata:
+      encoder         : Lavc57.38.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: -1
+    Stream #0:1: Audio: mp2, 44100 Hz, stereo, s16, 384 kb/s
+    Metadata:
+      encoder         : Lavc57.38.100 mp2
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (pcm_s16le (native) -> mp2 (native))
+Press [q] to stop, [?] for help
+Past duration 0.619987 too large
+Past duration 0.659996 too large
+Past duration 0.699989 too large
+Past duration 0.709999 too large
+Past duration 0.749992 too large
+Past duration 0.619987 too large
+Past duration 0.629997 too large
+Past duration 0.699989 too large
+frame=   23 fps=0.0 q=22.0 size=     172kB time=00:00:01.13 bitrate=1246.1kbits/s speed=2.23x    
+Past duration 0.739998 too large
+Past duration 0.749992 too large
+Past duration 0.609993 too large
+Past duration 0.779991 too large
+frame=   38 fps= 37 q=23.0 size=     253kB time=00:00:01.63 bitrate=1270.7kbits/s speed=1.61x    
+Past duration 0.629997 too large
+Past duration 0.679985 too large
+Past duration 0.719994 too large
+frame=   53 fps= 35 q=22.0 size=     328kB time=00:00:02.13 bitrate=1260.5kbits/s speed= 1.4x    
+Past duration 0.639992 too large
+Past duration 0.679985 too large
+Past duration 0.659996 too large
+frame=   69 fps= 34 q=22.0 size=     408kB time=00:00:02.66 bitrate=1254.3kbits/s speed=1.31x    
+Past duration 0.629997 too large
+Past duration 0.699989 too large
+Past duration 0.649986 too large
+Past duration 0.689995 too large
+Past duration 0.629997 too large
+Past duration 0.669991 too large
+Past duration 0.709999 too large
+frame=   84 fps= 33 q=23.0 size=     491kB time=00:00:03.16 bitrate=1271.0kbits/s speed=1.25x    
+Past duration 0.749992 too large
+Past duration 0.609993 too large
+Past duration 0.649986 too large
+Past duration 0.689995 too large
+frame=   99 fps= 33 q=23.0 size=     585kB time=00:00:03.66 bitrate=1308.1kbits/s speed=1.21x    
+Past duration 0.609993 too large
+Past duration 0.649986 too large
+Past duration 0.659996 too large
+frame=  114 fps= 32 q=24.0 size=     685kB time=00:00:04.16 bitrate=1346.4kbits/s speed=1.18x    
+Past duration 0.679985 too large
+Past duration 0.719994 too large
+frame=  129 fps= 32 q=23.0 size=     781kB time=00:00:04.66 bitrate=1370.4kbits/s speed=1.15x    
+Past duration 0.629997 too large
+Past duration 0.639992 too large
+Past duration 0.679985 too large
+Past duration 0.719994 too large
+Past duration 0.629997 too large
+Past duration 0.669991 too large
+Past duration 0.709999 too large
+frame=  144 fps= 32 q=23.0 size=     877kB time=00:00:05.16 bitrate=1390.9kbits/s speed=1.14x    
+Past duration 0.689995 too large
+Past duration 0.629997 too large
+Past duration 0.699989 too large
+Past duration 0.709999 too large
+Past duration 0.749992 too large
+frame=  159 fps= 31 q=23.0 size=     961kB time=00:00:05.66 bitrate=1388.9kbits/s speed=1.12x    
+Past duration 0.659996 too large
+Past duration 0.699989 too large
+Past duration 0.709999 too large
+Past duration 0.749992 too large
+frame=  174 fps= 31 q=23.0 size=    1055kB time=00:00:06.16 bitrate=1401.4kbits/s speed=1.11x    
+Past duration 0.629997 too large
+Past duration 0.669991 too large
+Past duration 0.709999 too large
+Past duration 0.689995 too large
+Past duration 0.629997 too large
+frame=  190 fps= 31 q=24.0 size=    1145kB time=00:00:06.70 bitrate=1399.6kbits/s speed=1.11x
